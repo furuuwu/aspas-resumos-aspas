@@ -8,16 +8,16 @@
 
 <body>
     <div id="app">
-        <h1>Resumos de Geologia Regional</h1>
-        <p>(região: Ibéria, mas na realidade apenas Portugal)</p>
+        <h1 id="title">Resumos de Geologia Regional</h1>
+        <p>(região: Ibéria=Península Ibérica, mas na realidade apenas Portugal)</p>
         <br>
 
         <div>
-            <h3>Escala de tempo geológico</h3>
+            <h2>Escala de tempo geológico</h2>
             <br>
             <ul>
                 <li>
-                    éons (+ recente para + antigo)
+                    <h3>éons (+ recente para + antigo)</h3>
                     <ul>
                         <li>Fanerozóico</li>
                         <li>Proterozóico</li>
@@ -31,7 +31,7 @@
                 <br>
 
                 <li>
-                    eras do Fanerozóico (+ recente para + antigo)
+                    <h3>eras do Fanerozóico (+ recente para + antigo)</h3>
                     <ul>
                         <li>
                             Cenozóico, que corresponde à anterior era terciária + quaternária
@@ -51,13 +51,13 @@
 
         <div>
             <br>
-            <p>Escala de tempo simplificada</p>
-            <img src="./public/escala_tempo_simplificada.png" alt="escala de tempo simplificada">
+            <h3>Escala de tempo simplificada</h3>
+            <img class="sm" src="./public/escala_tempo_simplificada.png" alt="escala de tempo simplificada">
         </div>
 
         <div id="ctn-zoomist-1" class="zoomist-container ctn-zoomist">
             <br>
-            <p>Escala de tempo: https://stratigraphy.org/chart</p>
+            <h3>Escala de tempo: https://stratigraphy.org/chart</h3>
             <div class="zoomist-wrapper">
 
                 <div class="zoomist-image">
@@ -69,7 +69,7 @@
 
         <div>
             <br>
-            <p>períodos da era Paleozóica</p>
+            <h3>períodos da era Paleozóica</h3>
             <small>idades: 540 a 252 Ma</small>
             <small>do mais antigo para mais recente:</small>
             <br>
@@ -110,7 +110,7 @@
 
         <div>
             <br>
-            <p>períodos da era Mesozóica</p>
+            <h3>períodos da era Mesozóica</h3>
             <small>idades: 252 a 66 Ma</small>
             <small>do mais antigo para mais recente:</small>
             <ul>
@@ -123,7 +123,7 @@
 
         <div>
             <br>
-            <p>períodos da era Cenozóica</p>
+            <h3>períodos da era Cenozóica</h3>
             <small>idades: 66 Ma a presente</small>
             <small>do mais antigo para mais recente:</small>
             <ul>
@@ -135,8 +135,8 @@
         </div>
 
         <div>
-            <br>
-            <p>Distribuição atual das placas litosféricas</p>
+            <h2>Tectónica de Placas</h2>
+            <h3>Distribuição atual das placas litosféricas</h3>
             <img src="./public/plates_current.png" alt="cat">
         </div>
 
@@ -169,61 +169,63 @@
         <div>
             <br>
             <h3>Ciclos de Wilson/orogénicos</h3>
-            <small>Abertura e fecho de uma bacia oceânica individual, que ao fechar cria um orógeno</small>
-            <br>
-            <ul>
-                <li>
-                    Extensão Inicial Pré-Deriva (Initial Pre-Drift Extension)
-                    <br>
-                    Descrição: Esta fase marca o início do ciclo, onde as forças tectônicas começam a estender a crosta
-                    continental, criando fissuras e vales de rifte.
-                    <br>
-                    Exemplo: O Vale do Rift na África Oriental é um exemplo de uma área onde a extensão pré-deriva está
-                    ocorrendo.
-
-                </li>
+            <div class="txt-sm">
+                <small>Abertura e fecho de uma bacia oceânica individual, que ao fechar cria um orógeno</small>
                 <br>
-                <li>
-                    Fase de Rift-to-Drift, Abertura Inicial de uma Bacia Oceânica (Rift-to-Drift Phase, Initial Opening
-                    of an Oceanic Basin)
+                <ul>
+                    <li>
+                        Extensão Inicial Pré-Deriva (Initial Pre-Drift Extension)
+                        <br>
+                        Descrição: Esta fase marca o início do ciclo, onde as forças tectônicas começam a estender a crosta
+                        continental, criando fissuras e vales de rifte.
+                        <br>
+                        Exemplo: O Vale do Rift na África Oriental é um exemplo de uma área onde a extensão pré-deriva está
+                        ocorrendo.
+                
+                    </li>
                     <br>
-                    Descrição: Durante esta fase, a crosta continental se rompe completamente, formando um novo oceano.
-                    Este é o começo da expansão do oceano.
+                    <li>
+                        Fase de Rift-to-Drift, Abertura Inicial de uma Bacia Oceânica (Rift-to-Drift Phase, Initial Opening
+                        of an Oceanic Basin)
+                        <br>
+                        Descrição: Durante esta fase, a crosta continental se rompe completamente, formando um novo oceano.
+                        Este é o começo da expansão do oceano.
+                        <br>
+                        Exemplo: O Mar Vermelho é um exemplo de um oceano formado pela fase de rift-to-drift.
+                
+                    </li>
                     <br>
-                    Exemplo: O Mar Vermelho é um exemplo de um oceano formado pela fase de rift-to-drift.
-
-                </li>
-                <br>
-                <li>
-                    Espalhamento do Assoalho Oceânico, Alargamento da Bacia (Seafloor Spreading, Widening of the Basin)
+                    <li>
+                        Espalhamento do Assoalho Oceânico, Alargamento da Bacia (Seafloor Spreading, Widening of the Basin)
+                        <br>
+                        Descrição: Ocorre a formação de nova crosta oceânica ao longo das dorsais oceânicas, resultando no
+                        alargamento da bacia oceânica.
+                        <br>
+                        Exemplo: O Oceano Atlântico está em fase de alargamento devido ao espalhamento do assoalho oceânico.
+                
+                    </li>
                     <br>
-                    Descrição: Ocorre a formação de nova crosta oceânica ao longo das dorsais oceânicas, resultando no
-                    alargamento da bacia oceânica.
+                    <li>
+                        Subducção da Litosfera Oceânica, Fechamento da Bacia (Subduction of Oceanic Lithosphere, Closure of
+                        the Basin)
+                        <br>
+                        Descrição: A crosta oceânica mais antiga é forçada para baixo das placas tectônicas adjacentes,
+                        levando ao fechamento da bacia oceânica.
+                        <br>
+                        Exemplo: O fechamento do Oceano de Tethys foi causado pela subducção da litosfera oceânica.
+                    </li>
                     <br>
-                    Exemplo: O Oceano Atlântico está em fase de alargamento devido ao espalhamento do assoalho oceânico.
-
-                </li>
-                <br>
-                <li>
-                    Subducção da Litosfera Oceânica, Fechamento da Bacia (Subduction of Oceanic Lithosphere, Closure of
-                    the Basin)
+                    <li>
+                        Colisão Continente-Continente (Continent-Continent Collision)
+                        <br>
+                        Descrição: As massas continentais colidem devido ao movimento das placas tectônicas, resultando na
+                        formação de grandes cadeias de montanhas.
+                        <br>
+                        Exemplo: A colisão entre a Índia e a Ásia deu origem à formação do Himalaia.
+                    </li>
                     <br>
-                    Descrição: A crosta oceânica mais antiga é forçada para baixo das placas tectônicas adjacentes,
-                    levando ao fechamento da bacia oceânica.
-                    <br>
-                    Exemplo: O fechamento do Oceano de Tethys foi causado pela subducção da litosfera oceânica.
-                </li>
-                <br>
-                <li>
-                    Colisão Continente-Continente (Continent-Continent Collision)
-                    <br>
-                    Descrição: As massas continentais colidem devido ao movimento das placas tectônicas, resultando na
-                    formação de grandes cadeias de montanhas.
-                    <br>
-                    Exemplo: A colisão entre a Índia e a Ásia deu origem à formação do Himalaia.
-                </li>
-                <br>
-            </ul>
+                </ul>
+            </div>
             <br>
             <p>De forma simplificada, (mais fácil de memorizar) pode-se dividir o ciclo em 2 fases:</p>
             <ul>
@@ -235,7 +237,9 @@
             </ul>
             <small>Entre estas duas fases dá-se uma inversão do ciclo de Wilson (da fase distensiva para a fase
                 compressiva)</small>
-            <img src="./public/Wilson_cycle.png" alt="cat">
+                <br>
+            <img class="sm" src="./public/Wilson_cycle.png" alt="cat">
+            <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/N--HPPmcG-o?si=HRZJXzULINo9WAe_"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -303,7 +307,7 @@
             <h3>Ciclos de Wilson na Europa</h3>
             <small>*Os mais recentes que afetaram a Península Ibérica</small>
             <br>
-            <img src="./public/Wilson_cycles_iberia.png" alt="cat">
+            <img class="md" src="./public/Wilson_cycles_iberia.png" alt="cat">
             <p>A seta a vermelho são so ciclos
                 pré-mesozóicos. O ciclo caledónico está mal registado em Portugal. Os ciclos bem registados são o
                 cadominao, varisco e alpino.</p>
@@ -318,12 +322,12 @@
             </ul>
             <p>
                 O soco/embassamento/substrato da península Ibérica (Ibéria) é o Maciço Ibérico/Hespérico/Antigo, que é
-                um orogeno resultante do ciclo varisco.
+                um orógeno resultante do ciclo varisco.
             </p>
             <p>
                 Depois, atua o ciclo alpino.
                 <br>
-                Na fase de sedimentogénese do ciclo alpina, geram-se várias bacias sedimentares
+                Na fase de sedimentogénese do ciclo alpino, geram-se várias bacias sedimentares
                 mesozóicas. Em Portugal, o que resta dessas bacias são a bacia Lusitânica (a
                 ocidente/na orla ocidental) e a bacia Algarvia (a sul/na orla meridional).
                 <small>
@@ -353,6 +357,7 @@
                 deformadas", enquanto que as "bacias meso-cenozóicas pouco deformadas" são a bacia Lusitânica e a
                 Alagarvia.
             </p>
+            <br>
             <p>Resumindo, o ciclo alpino está representado:</p>
             <ul>
                 <li>pela acumulação de sedimentos nas bacias meso-cenozóicas e cenozóicas</li>
@@ -401,7 +406,7 @@
                     orogenia Ouachita-Alleghaniana.</li>
             </ul>
             <br>
-            <img src="./public/variscan_cycle.png" alt="cat">
+            <img class="sm" src="./public/variscan_cycle.png" alt="cat">
         </div>
         <div>
             <br>
@@ -434,18 +439,18 @@
                 </li>
             </ul>
             <br>
-            <img src="./public/alpine_cycle.png" alt="cat">
+            <img class="md" src="./public/alpine_cycle.png" alt="cat">
         </div>
         <div>
             <br>
             <h3>Idades da Europa</h3>
             <br>
-            <img src="./public/europe_ages.png" alt="cat">
+            <img class="md" src="./public/europe_ages.png" alt="cat">
         </div>
 
         <div>
             <br>
-            <h3>Cartas geológicas de Portugal (CGPs)</h3>
+            <h2>Cartas geológicas de Portugal (CGPs)</h2>
             <ul>
                 <li>1: 1M</li>
                 <li>
@@ -474,7 +479,37 @@
 
         <div>
             <br>
-            <h3>Península Ibérica - unidades geológicas</h3>
+            <h2>Unidades geológicas/geodinâmicas</h2>
+            <ul>
+                <li>1ª ordem - Terrenos
+                    <br>
+                    <small>são fragmentos da crusta que originalmente se encontrariam espacialmente afastados</small>
+                    <ul>
+                        <li>Terreno Ibérico
+                            <br>
+                            <small>Tem todas as zonas do Maciço Ibérico excepto a ZSP</small>
+                        </li>
+                        <li>Terreno Sul Português</li>
+                        <li>Terrenos Exóticos
+                            <br>
+                            <small>esta categoria agrupa os terrenos que foram carreados sobre os anteriores</small>
+                            <ul>
+                                <li>Terreno Continental Alóctone</li>
+                                <li>Terreno Ofiolítico do NW Ibérico</li>
+                                <li>Terreno Ofiolítico do SW Ibérico</li>
+                                <li>Terreno Finisterra</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img class="md" src="./public/terrain.png" alt="cat">
+                </li>
+                <li>2ª ordem - Zonas</li>
+            </ul>
+        </div>
+
+        <div>
+            <br>
+            <h2>PI - zonas morfotectónicas/tectonoestratigráficas</h2>
             <ul>
                 <li>Maciço Ibérico (MI), Hespérico ou Antigo</li>
                 <li>Cordilheiras alpinas/ Sistemas alpinos
@@ -535,14 +570,21 @@
                 </li>
             </ul>
             <br>
+            <img src="./public/portugal_location.png" alt="cat">
+            <img class="md" src="./public/portugal_districts.jpeg" alt="">
             <img src="./public/iberian-peninsula.png" alt="cat">
             <img src="./public/iberian_central_system.png" alt="cat">
-            <img src="./public/portugal_zones.png" alt="cat">
-            <img src="./public/portugal_zones_legend.png" alt="cat">
+            <br>
+            <img class="sm" src="./public/portugal_zones.png" alt="cat">
+            <img class="sm" src="./public/portugal_zones_legend.png" alt="cat">
+            <br>&nbsp;<br>
             <small>bacias mesozóicas do ocidente de Portugal</small>
-            <img src="./public/some_mesozoic_basins.png" alt="cat">
+            <br>
+            <img class="sm" src="./public/some_mesozoic_basins.png" alt="cat">
+            <br>&nbsp;<br>
             <small>bacias cenozóicas em Portugal Continental</small>
-            <img src="./public/cenozoic_basins.png" alt="cat">
+            <br>
+            <img class="sm" src="./public/cenozoic_basins.png" alt="cat">
         </div>
 
         <div>
@@ -590,6 +632,339 @@
             </ul>
             <br>
             <img src="./public/iberian-massif-zones.png" alt="cat">
+        </div>
+
+        <div>
+            <br>
+            <h2>Zona Cantábrica (ZC)</h2>
+            <ul>
+                <li>afloram rochas anteriores e simultâneas á orogenia varisca</li>
+                <li>o limite ocidental desta zona é formando por rochas pré-cambricas, que ocupam o núcleo da antiforma de Narcea</li>
+            </ul>
+            <img class="sm" src="./public/cantabric_zone.png" alt="cat">
+        </div>
+
+        <div>
+            <br>
+            <h2>Zona Asturocidental Leonesa (ZAOL)</h2>
+            <ul>
+                <li>2 antiformas, em cujo núcleo aflora o Pré-Câmbrico: a este, a antiforma de Narcea (que se extende até á Zona Cantábrica) e a oeste a antiforma "Ollo de Sapo"</li>
+            </ul>
+            <img src="./public/zaol1.png" alt="cat">
+            <img class="md" src="./public/zaol1_legend.png" alt="cat">
+            <img src="./public/zaol2.png" alt="cat">
+            <img class="sm" src="./public/zaol2_legend.png" alt="cat">
+        </div>
+
+        <div>
+            <br>
+            <h2>Zona Centro Ibérica (ZCI) em Portugal</h2>
+            <p>Tópicos</p>
+            <ul>
+                <li>descrição
+                    <ul>
+                        <li>limite a nordeste pela Zona Asturocidental-leonesa</li>
+                        <li>limite a sul pela Zona de Cisalhamento Tomar-Badajoz-Córdoba</li>
+                        <li>domínios
+                            <ul>
+                                <li>Domínio do Olho de Sapo, um complexo plutono-vulcânico granítico</li>
+                                <li>Domínio do Complexo Xisto-Grauváquico, espessa sequência terrígena designada inicialmente por Complexo Xisto-Grauváquico, e posteriormente designada Supergrupo Dúrico-Beirão (que inclui o grupo do Douro a norte e o das Beiras a sul)</li>
+                                <li>Domínio Meridional, unidades com afinidade (semelhantes…) com a Zona de Ossa-Morena</li>
+                            </ul>
+                        </li>
+                        <li>estratigrafia/unidades (da base/baixo para o topo/cima)
+                            <br>
+                            <small>normalmente, os nomes dados têm a ver com a zona onde afloram...</small>
+                            <ul>
+                                <li>substrato cadomiano (Proterozóico)</li>
+                                
+                                <li>Super-grupo Dúrico-Beirão (Proterozóico superior a Câmbrico)
+                                    <br>
+                                    a Norte, no Grupo do Douro:
+                                    <ul>
+                                        <li>Fm. de Bateiras</li>
+                                        <li>Fm. de Ervedosa do Douro</li>
+                                        <li>Fm. do Rio Pinhão</li>
+                                        <li>Fm. de Pinhão</li>
+                                        <li>Fm. da Desejosa ⇔ Fm. de Filitos Laminados</li>
+                                        <li>Fm. de S. Domingos</li>
+                                    </ul>
+                                    <small>A Fm. da Desejosa corresponde ao Câmbrico.
+                                    </small>
+                                    <br>
+                                    <small>A Fm. S. Domingos nem sempre está presente.</small>
+                                    <br>
+                                    a SW, no Grupo das Beiras:
+                                    <br>
+                                    <small>esta é o grupo que aparece na sequência para os “setores meridionais/sul da ZCI”</small>
+                                    <ul>
+                                        <li class="idk">TODO - nao temos que saber as formações, i think</li>
+                                    </ul>
+                                </li>
+
+                                <li>Ordovícico
+                                    <br>
+                                    na região do Douro (NE):
+                                    <br>
+                                    <small>(esta estratigrafia baseia-se na Serra do Marão, na região de Trás-os-Montes)</small>
+                                    <ul>
+                                        <li>Fm. Vale de Bojas, na região do Douro ⇔ Grupo de Vale de Grou, na região das Beiras</li>
+                                        <li>Fm. Marão (anterior Fm. Quartzítica) ⇔ Fm. de Santa Justa</li>
+                                        <li>Fm. Moncorvo (anterior Fm. Xistenta) ⇔ Fm. Valongo</li>
+                                        <li>Fm. Chão do Amieiral</li>
+                                        <li>Fm. Santo Adrião</li>
+                                        <li>Fm. Maceiras</li>
+                                        <li>Fm. Guadramil</li>
+                                    </ul>
+
+                                    na região das Beiras (SW):
+                                    <ul>
+                                        <li>Grupo de Vale de Grou</li>
+                                        <li class="idk">outras....</li>
+                                    </ul>
+
+                                    na região NW (antiforma de Valongo):
+                                    <ul>
+                                        <li>Fm. de Santa Justa</li>
+                                        <li>Fm. de Valongo</li>
+                                        <li>Fm./Grauvaques de Sobrido</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Silúrico
+                                    <ul>
+                                        <li>Xistos carbonosos inferiores</li>
+                                        <li>Xistos carbonosos superiores</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Devónico
+                                    <ul>
+                                        <li>Fm./Grauvaques de Sobrado</li>
+                                        <li>Fm. de Telheiras ⇔ Fm. Santos</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Carbónico superior
+                                    <br>
+                                    <small>Un. = unidade</small>
+                                    <ul>
+                                        <li>Un. de Bougado</li>
+                                        <li>Un. de Ervedosa</li>
+                                        <li>Un. de S. Pedro Fins-Midões</li>
+                                    </ul>
+                                </li>
+
+                                <li>unidades alóctones e carreamentos
+                                    <br>
+                                    <small>na região NW da da ZCI, aparecem por cima das unidades autóctones da ZCI, as unidades alóctones da ZGTM (foram carreadas sobre a ZCI)</small>
+                                    <ul>
+                                        <li>carreamento (parautóctone)
+                                            <br>
+                                        Un. do Minho Central e Ocidental - Silúrico</li>
+                                        <li>carreamento (alóctone)
+                                            <br>
+                                        Un. de Vila Nune e Valença - Silúrico e Devónico Inferior</li>
+
+                                    </ul>
+                                </li>
+
+                                <li>lacunas e discordâncias
+                                    <ul>
+                                        <li>discordãncia - entre o Câmbrico e o Ordovícico</li>
+                                        <li>lacuna - Fm. de Valongo e Fm. de Sobrido</li>
+                                        <li>lacuna - Fm. de Sobrido e Silúrico</li>
+                                        <li>para N do anticlinal de Valongo, vê-se adicionalmente uma lacuna e discordância entre o devónico e o carbónico</li>
+                                        </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>substrato cadomiano (Proterozóico)
+                    <br>
+                    afloramentos (ou seja, visível à superfície) em:
+                    <ul>
+                        <li>Complexo Gnaisso-Migmatítico de Miranda do Douro</li>
+                        <li>Gnaisse de Gandra</li>
+                    </ul>
+
+                </li>
+                <li>Super-grupo Dúrico-Beirão (Proterozóico superior a Câmbrico)
+                    <ul>
+                        <li>é sucessão com alternaância de xistos e metagrauvaques</li>
+                        <li>Foram designadas, em Portugal, por Formação Xistosa da Beira, Xistos da Beira e Complexo Xisto-Grauváquico
+                        ante-ordovícico. Posteriormente, esta sucessão foi designada de Supergrupo Dúrico-Beirão, tendo sido subdividida em Grupo do Douro, com
+                        expressão cartográfica a Norte, em particular nos terrenos que afloram ao longo do rio Douro e Grupo das Beiras, a Sul
+                        de uma linha limítrofe que passa por S.João da Madeira, Viseu e Serra da Malcata.</li>
+                        <li>A idade não é conhecida com exatidão, devido à ausência generalizada de macrofósseis mas as unidades inferiores devem
+                        corresponder ao Precâmbrico superior e as unidades superiores ao Câmbrico inferior. Ou seja, são rochas
+                        ante-ordovícicas.</li>
+                    </ul>
+                </li>
+                <li>Ordovícico
+                    <br>
+                    <ul>
+                        <li>O Ordovícico inferior é discordante e transgressivo (transgressão ordovícica) sobre os terrenos subjacentes. Inclui a Fm. Vale de Bojas e a Fm. Marão.</li>
+                        <li>O Ordovícico médio está representado por xistos negros com fósseis, na Fm. Moncorvo (anteriormente designada Fm.
+                        Xistenta)</li>
+                        <li>O Ordovícico superior tem caráter mais heterogéneo, com várias unidades diferenciadas (Fm. Chão do Amieiral, Fm. Santo
+                        Adrião, Fm. Maceiras, Fm. Guadramil)</li>
+                        <li>desta descrição estratigráfica infere-se que foi uma sedimentação de plataforma marinha siliciclástica, pouco profunda,
+                        frequentemente afectada por ondas, correntes e tempestades.</li>
+                    </ul>
+                </li>
+                <li>Silúrico
+                    <ul>
+                        <li>Entre o Silúrico e o Ordovícico interpõe-se uma lacuna estratigráfica</li>
+                        <li>caracteriza-se pela existência de xistos negros com graptólitos</li>
+                        <li>xistos indicam a subida do nível médio das águas do mar</li>
+                    </ul>
+                </li>
+                <li>Devónico
+                    <ul>
+                        <li>rochas pelíticas</li>
+                    </ul>
+                </li>
+                <li>Carbónico superior
+                    <ul>
+                        <li>afloramentos restringem-se a "depressões intramontanhosas límnicas" marginadas
+                        por acidentes tectónicos (como o cisalhamento Douro-Beira e o cisalhamento de Porto-Tomar). Na sebenta chamam a isto de zona de cisalhamento "Sulco Carbonífero Dúrico-Beirão".</li>
+                    </ul>
+                </li>
+                <li>Os setores meridionais da ZCI em Portugal
+                    <br>
+                    <p class="idk">TODO ....</p>
+                </li>
+                <li>A cartografia e propostas estratigráficas anteriores
+                    <br>
+                    esta secção é sobre a reconciliação da estratigrafia para as unidades autóctones da ZCI e para as unidades alóctones do setor ocidental da ZGTM, que aparecem por eg. na antiforma de Valongo.
+                </li>
+                <li>Evolução geodinâmica da ZCI
+                    <br>
+                    <p class="idk">idc</p>
+                </li>
+            </ul>
+            <img class="sm" src="./public/funny_regions.gif" alt="">
+            <img class="ssm" src="./public/funny_regions2.png" alt="">
+            <br>
+            <img src="./public/zci.png" alt="cat">
+            <img src="./public/zci_domains.png" alt="cat">
+
+            <br>
+            <small>Gnaisse de Gandra (folha 1)</small>
+            <br>
+            <img src="./public/ortognaisse_Gandra.png" alt="cat">
+            <br>
+            <small>Complexo gnaisso-migmatítico de Miranda do Douro (folha 2)</small>
+            <br>
+            <img src="./public/miranda_do_douro.png" alt="cat">
+            <br>
+            <small>sequência do Grupo do Douro
+            </small>
+            <br>
+            <img class="sm" src="./public/grupo_douro.png" alt="cat">
+        </div>
+
+        <div>
+            <h2>Granitóides da ZCI</h2>
+            <p class="idk">TODO</p>
+        </div>
+
+        <div>
+            <h2>ZGMT em Portugal</h2>
+            <ul>
+                <li>descrição
+                    <ul>
+                        <li>é formada por terrenos alóctones instalados sobre rochas da ZCI durante a orogenia varisca</li>
+                        <li>
+                            na base estão as rochas autóctones do precâmbrico e do paleozóico inferior da ZCI e por cima estão as rochas alóctones
+                            que foram parar acima da ZCI por obducção da litosfera oceânica
+                        </li>
+                        <li>Onde placas oceânicas e continentais convergem, a litosfera oceânica geralmente subduz/subducta sob o continente. No
+                        entanto, às vezes, pedaços da litosfera oceânica são raspados e adicionados a um continente. Esse processo é apelidado
+                        de obdução.
+                        Por causa da obdução, rochas ultramáficas, anteriormente parte do manto, podem ser encontradas em complexos de
+                        ofiolitos. Esses complexos são cunhas de crosta oceânica e manto, agora expostas em afloramentos na superfície, que
+                        foram empurradas para as margens continentais acima das zonas de subducção</li>
+                        <li>
+                            ocorrem 4 maciços na Península Ibérica:
+                            <br>
+                            <small>(apenas os de Portugal interessam para nós)</small>
+                            <ul>
+                                <li>maciço de Ordones</li>
+                                <li>Cabo Ortegal (norte da Galiza)</li>
+                                <li>Bragança</li>
+                                <li>Morais</li>
+                            </ul>
+                        </li>
+                        <li>
+                            domínios:
+                            <ul>
+                                <li>domínio autóctone ou do Douro Inferior</li>
+                                <li>domínio alóctone ou Transmontano
+                                    <br>
+                                    <small>é um cavalgamento sobre o autóctone. o alóctone tem com 4 mantos empilhados.</small>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    estratigrafia (de baixo para cima) - da região de Morais (Trás-os-Montes oriental)
+                    <ul>
+                        <li>o parautóctone
+                            <br>
+                            manto parautóctone = Parautochthonous Thrust Complex, PTC
+                            <br>
+                            é parautóctone (pequeno grau de aloctonia), ou seja, é composto por rochas bastante semelhantes às dos terrenos
+                            autóctones subjacentes da ZCI.
+                            <br>
+                            Corresponde ao Domínio Peritransmontano.
+                        </li>
+                        <li>unidades alóctones
+                            <ul>
+                                <li>Complexo alóctone inferior (CAI; Complexo basal)
+                                <br>
+                                complexo alóctone inferior (CAI) ou complexo basal = Lower Allochthonous Thrust Complex, LATC
+                                <br>
+                                Corresponde ao correspondente ao Domínio Centro Transmontano.
+                                </li>
+                                <li>Complexo ofiolítico de Morais (COM) ou Complexo alóctone intermédio
+                                    <br>
+                                    complexo alóctone intermédio ou ofiolítico (CO) = Ophiolite Thrust Complex, OTC
+                                    <br>
+                                    Corresponde aos complexos polimetamórficos com termos básicos e quartzo-feldspáticos dos Maciços de Bragança e de
+                                    Morais.
+                                </li>
+                                <li>Complexo alóctone superior (CAS)
+                                    <br>
+                                    complexo alóctone superior (CAS) = Upper Allochthonous Thrust Complex, UATC
+                                    <br>
+                                    É uma sequência monometamórfica do Maciço de Morais.
+                                    <br>
+                                    Corresponde a um manto de idade precâmbrica, carreado no topo do ofiolito
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>outros tópicos:
+                    <ul>
+                        <li>evolução tectono-estrutural dos complexos alóctones da região de Morais
+                            <br>
+                            <p class="idk">idk</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="./public/zgtm.png" alt="">
+            <img class="sm" src="./public/obduction.png" alt="">
         </div>
     </div>
     <script src="./index.ts" type="module"></script>

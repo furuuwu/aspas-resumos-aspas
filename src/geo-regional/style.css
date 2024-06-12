@@ -1,19 +1,37 @@
+:root {
+    --scale_factor: 0.9;
+    --main-bg-color: powderblue;
+    --title-font-size: calc(35px * var(--scale_factor));
+    --body-font-size: calc(18px * var(--scale_factor));
+    --details-font-size: smaller;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: powderblue;
-    padding-left: 20px;
-    font-size: 20px;
+@font-face {
+    font-family: f;
+    src: url(./public/Please\ write\ me\ a\ song.ttf);
+    /*Vanessa Bays @ http: //bythebutterfly.com*/
+}
+@font-face {
+    font-family: f2;
+    src: url(./public/Robotic\ Love.ttf);
+}
+@font-face {
+    font-family: f3;
+    src: url(./public/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf);
 }
 
-#app {
-    background-color: powderblue;
+body {
+    background-color: var(--main-bg-color);
     padding-left: 20px;
-    font-size: 20px;
+    font-size: var(--body-font-size);
+    font-family: f3;
 }
 
 .ctn-zoomist {
@@ -45,6 +63,25 @@ ul li li {
     margin-left: 40px;
 }
 
-ul {
-    padding-bottom: 10px;
+.sm {
+    width: 30%;
+}
+.ssm {
+    width: 10%;
+}
+
+.md {
+    width: 50%;
+}
+
+.txt-sm {
+    font-size: var(--details-font-size);
+}
+
+#title {
+    font-size: var(--title-font-size);
+}
+
+.idk {
+    color: red;
 }
