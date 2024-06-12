@@ -1,0 +1,1 @@
+import{m as o}from"./zoomist-BqW25zLG.js";const m="https://d2cazpy3iwl8lo.cloudfront.net/geo-regional/";function c(t){const e=`${m}${t}`;document.addEventListener("DOMContentLoaded",function(){const n=document.getElementById("map_placeholder");n.src=e,new o("#ctn-zoomist-1",{maxScale:10})})}export{c as d,m};
