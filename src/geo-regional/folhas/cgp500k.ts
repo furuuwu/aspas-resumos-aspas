@@ -1,6 +1,5 @@
-import "zoomist/css";
 import "./style.css";
-import Zoomist from "zoomist";
+import ZoomPanImage from "../ZoomPanImage";
 import { my_url } from './common'
 
 const folha500kN = `${my_url}cgp500k_folhanorte.jpg`;
@@ -13,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     folha500kNElement.src = folha500kN;
     folha500kSElement.src = folha500kS;
 
-    new Zoomist("#ctn-zoomist-2", {
-        maxScale: 10,
+    new ZoomPanImage('#image-container-1', {
+        maxScale: 10
     });
 
-    new Zoomist("#ctn-zoomist-3", {
-        maxScale: 10,
+    new ZoomPanImage('#image-container-2', {
+        maxScale: 10
     });
 });

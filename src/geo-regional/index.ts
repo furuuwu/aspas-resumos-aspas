@@ -1,6 +1,11 @@
-import "zoomist/css";
+
 import "./style.css";
+/*
 import Zoomist from "zoomist";
+import "zoomist/css";
+*/
+
+import ZoomPanImage from "./ZoomPanImage";
 
 document.addEventListener("DOMContentLoaded", function () {
   initializeApp();
@@ -10,10 +15,11 @@ async function initializeApp(): Promise<void> {
   await loadAllSections();
   console.log('All sections have been loaded.');
 
-  new Zoomist("#ctn-zoomist-1", {
-    maxScale: 3,
-  });
+  new ZoomPanImage('#escala-tempo', {
+    maxScale: 3
+  })
 }
+
 
 async function loadSection(fileName: string): Promise<void> {
   try {
@@ -56,5 +62,11 @@ async function loadAllSections(): Promise<void> {
   ordered_sections = ordered_sections.map(f => r_path + f);
 
   console.log(ordered_sections);
-  await Promise.all(ordered_sections.map(s => loadSection(s)));
+  // await Promise.all(ordered_sections.map(s => loadSection(s)));
+
+  for (const section of ordered_sections) {
+    await loadSection(section);
+  }
+
+  console.log('All sections have been loaded.');
 }
